@@ -126,8 +126,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/83/6f/ef541bd4440a117d3d19551d4810c2991781b4c853eb7da5d845af82617f/ssh-mitm-0.5.7.tar.gz",
-                    "sha256": "0ec52ae2161dcfd3e6c03664bca8af9a9ed2b127e60b0d3f3311e570519c566e"
+                    "url": "https://files.pythonhosted.org/packages/42/cc/f274e67eb4bd7dd84bb9d2fff98ff52030c71b85468d62e4b2537efaac68/ssh-mitm-0.5.8.tar.gz",
+                    "sha256": "15a3605ec5dfbe3305038460ac3de9d1de516ff016aab7e82d33a8bf9cbe7867"
                 },
                 {
                     "type": "file",
