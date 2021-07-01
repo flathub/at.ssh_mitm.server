@@ -126,13 +126,13 @@
                 },                
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/7a/5b/bc0b5ab38247bba158504a410112b6c03f153c652734ece1849749e5f518/PyYAML-5.4.1-cp36-cp36m-manylinux1_x86_64.whl",
-                    "sha256": "4e0583d24c881e14342eaf4ec5fbc97f934b999a6828693a99157fde912540cc"
+                    "url": "https://files.pythonhosted.org/packages/70/96/c7245e551b1cb496bfb95840ace55ca60f20d3d8e33d70faf8c78a976899/PyYAML-5.4.1-cp38-cp38-manylinux1_x86_64.whl",
+                    "sha256": "8c1be557ee92a20f184922c7b6424e8ab6691788e6d86137c5d93c1a6ec1b8fb"
                 },                
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/eb/fa/98f8ae428dc23a2b9dcfb187600e4a9b3effce35a28b63cb8f97fda1938c/PyYAML-5.4.1-cp36-cp36m-manylinux2014_aarch64.whl",
-                    "sha256": "72a01f726a9c7851ca9bfad6fd09ca4e090a023c00945ea05ba1638c09dc3347"
+                    "url": "https://files.pythonhosted.org/packages/06/2f/c03b2b7e6fcda2793f751c82bd2c488d4bd064720edffa2fdda9a422bec2/PyYAML-5.4.1-cp38-cp38-manylinux2014_aarch64.whl",
+                    "sha256": "fd7f6999a8070df521b6384004ef42833b9bd62cfee11a09bda1079b4b704247"
                 },
                 {
                     "type": "file",
