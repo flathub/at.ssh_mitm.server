@@ -123,11 +123,16 @@
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/d8/ba/21c475ead997ee21502d30f76fd93ad8d5858d19a3fad7cd153de698c4dd/bcrypt-3.2.0.tar.gz",
                     "sha256": "5b93c1726e50a93a033c36e5ca7fdcd29a5c7395af50a6892f5d9e7c6cfbfb29"
+                },                
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/7a/5b/bc0b5ab38247bba158504a410112b6c03f153c652734ece1849749e5f518/PyYAML-5.4.1-cp36-cp36m-manylinux1_x86_64.whl",
+                    "sha256": "4e0583d24c881e14342eaf4ec5fbc97f934b999a6828693a99157fde912540cc"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/42/cc/f274e67eb4bd7dd84bb9d2fff98ff52030c71b85468d62e4b2537efaac68/ssh-mitm-0.5.8.tar.gz",
-                    "sha256": "619b0512b24c822f4cac295a641950fde5b73b7c1aadde076f22d1252de4f679"
+                    "url": "https://files.pythonhosted.org/packages/e0/5b/dc1a1897462ad767d44fc972f1c171642313c63562124540ea3acc41ccc7/ssh_mitm-0.5.9-py3-none-any.whl",
+                    "sha256": "9655c31ea396baa76d1fd855566a0f461cda4e57efbfc9815e5404c1f46e36ce"
                 },
                 {
                     "type": "file",
