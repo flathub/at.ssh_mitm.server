@@ -1,7 +1,7 @@
 {
     "app-id": "at.ssh_mitm.server",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "ssh-mitm",
     "finish-args": [
@@ -13,9 +13,10 @@
             "buildsystem": "simple",
             "build-commands": [
                 "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
-                "install -Dm 644 ssh-mitm-64.png ${FLATPAK_DEST}/share/app-info/icons/flatpak/64x64/at.ssh_mitm.server.png",
-                "install -Dm 644 ssh-mitm-128.png ${FLATPAK_DEST}/share/app-info/icons/flatpak/128x128/at.ssh_mitm.server.png",
-                "install -Dm 644 ssh-mitm-256.png ${FLATPAK_DEST}/share/app-info/icons/flatpak/256x256/at.ssh_mitm.server.png",
+                "install -Dm 644 ssh-mitm-64.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/at.ssh_mitm.server.png",
+                "install -Dm 644 ssh-mitm-128.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/at.ssh_mitm.server.png",
+                "install -Dm 644 ssh-mitm-256.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/at.ssh_mitm.server.png",
+                "install -Dm644 at.ssh_mitm.server.desktop -t ${FLATPAK_DEST}/share/applications",
                 "pip3 install -U --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} wheel --no-build-isolation",
                 "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"semantic_version\" --no-build-isolation",
                 "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"setuptools-rust\" --no-build-isolation",
@@ -43,6 +44,10 @@
                 },
                 {
                     "type": "file",
+                    "path": "at.ssh_mitm.server.desktop"
+                },
+                {
+                    "type": "file",
                     "url": "https://files.pythonhosted.org/packages/ed/46/e298a50dde405e1c202e316fa6a3015ff9288423661d7ea5e8f22f589071/wheel-0.36.2.tar.gz",
                     "sha256": "e11eefd162658ea59a60a0f6c7d493a7190ea4b9a85e335b33489d9f17e0245e"
                 },
@@ -54,17 +59,14 @@
 
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/16/9d/aa507ddc5dc630b499d4905000b17448a969f0cdcdb9bbc2fe5e369a5fad/cryptography-3.4.7-cp36-abi3-manylinux2010_x86_64.whl",
-                    "sha256": "37340614f8a5d2fb9aeea67fd159bfe4f5f4ed535b1090ce8ec428b2f15a11f2"
-                },
-                {
-                    "type": "file",
                     "url": "https://files.pythonhosted.org/packages/1b/02/6176adbe90b02ac9fcd96175deb1fd03c2739db3d2562eded328836dcacb/cryptography-3.4.7-cp36-abi3-manylinux2014_aarch64.whl",
+                    "only-arches": [ "aarch64" ],
                     "sha256": "240f5c21aef0b73f40bb9f78d2caff73186700bf1bc6b94285699aff98cc16c6"
                 },
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/b2/26/7af637e6a7e87258b963f1731c5982fb31cd507f0d90d91836e446955d02/cryptography-3.4.7-cp36-abi3-manylinux2014_x86_64.whl",
+                    "only-arches": [ "x86_64" ],
                     "sha256": "1e056c28420c072c5e3cb36e2b23ee55e260cb04eee08f702e0edfec3fb51959"
                 },
 
@@ -123,16 +125,18 @@
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/d8/ba/21c475ead997ee21502d30f76fd93ad8d5858d19a3fad7cd153de698c4dd/bcrypt-3.2.0.tar.gz",
                     "sha256": "5b93c1726e50a93a033c36e5ca7fdcd29a5c7395af50a6892f5d9e7c6cfbfb29"
-                },                
+                },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/70/96/c7245e551b1cb496bfb95840ace55ca60f20d3d8e33d70faf8c78a976899/PyYAML-5.4.1-cp38-cp38-manylinux1_x86_64.whl",
-                    "sha256": "8c1be557ee92a20f184922c7b6424e8ab6691788e6d86137c5d93c1a6ec1b8fb"
-                },                
+                    "url": "https://files.pythonhosted.org/packages/3d/1f/2a3705efca3b47161ceaaf52970a9d4b81cc84600818686ecd75093a00a5/PyYAML-5.4.1-cp39-cp39-manylinux1_x86_64.whl",
+                    "only-arches": [ "x86_64" ],
+                    "sha256": "74c1485f7707cf707a7aef42ef6322b8f97921bd89be2ab6317fd782c2d53183"
+                },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/06/2f/c03b2b7e6fcda2793f751c82bd2c488d4bd064720edffa2fdda9a422bec2/PyYAML-5.4.1-cp38-cp38-manylinux2014_aarch64.whl",
-                    "sha256": "fd7f6999a8070df521b6384004ef42833b9bd62cfee11a09bda1079b4b704247"
+                    "url": "https://files.pythonhosted.org/packages/38/b1/ece9535e842b64e6e0676f5e4f506f1b395d9aaaea6f3ea9abad498a8697/PyYAML-5.4.1-cp39-cp39-manylinux2014_aarch64.whl",
+                    "only-arches": [ "aarch64" ],
+                    "sha256": "d483ad4e639292c90170eb6f7783ad19490e7a8defb3e46f97dfe4bacae89122"
                 },
                 {
                     "type": "file",

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=SSH-MITM
+Exec=ssh-mitm %u
+Type=Application
+Icon=at.ssh_mitm.server
+Categories=Network
+Terminal=true
