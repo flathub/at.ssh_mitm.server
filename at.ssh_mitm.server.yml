@@ -4,6 +4,14 @@ runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: ssh-mitm
 finish-args:
-  - "--share=network"
+  # needed to accept client connections 
+  # and connect to the remote server
+  - --share=network
+  # needed to create log files and
+  # and read users ssh configuration files
+  - --filesystem=home
+  # needed to access the local ssh-agent and 
+  # user ssh keys
+  - --socket=ssh-auth
 modules:
   - python3-ssh-mitm.json
