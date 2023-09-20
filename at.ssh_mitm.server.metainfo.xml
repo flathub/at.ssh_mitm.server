@@ -47,7 +47,6 @@
         </ul>
       </description>
     </release>
-    <release version="0.5.8" date="2021-06-28"/>
   </releases>
   <keywords>
     <keyword>ssh</keyword>
