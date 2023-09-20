@@ -2,16 +2,60 @@
 <component type="console-application">
   <id>at.ssh_mitm.server</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>LGPL-3.0</project_license>
+  <project_license>GPL-3.0</project_license>
   <name>SSH-MITM</name>
-  <summary>ssh mitm server for security audits</summary>
+  <developer_name>Manfred Kaiser</developer_name>
+  <summary>SSH-MITM - ssh audits made simple</summary>
   <description>
-    <p>ssh mitm server for security audits supporting public key authentication, session hijacking and file manipulation </p>
+    <p>SSH-MITM is a man in the middle SSH Server for security audits and malware analysis.</p>
+    <p>Password and publickey authentication are supported and SSH-MITM is able to detect, if a user is able to login with publickey authentication on the remote server. This allows SSH-MITM to accept the same key as the destination server. If publickey authentication is not possible, the authentication will fall back to password-authentication.</p>
+    <p>When publickey authentication is possible, a forwarded agent is needed to login to the remote server. In cases, when no agent was forwarded, SSH-MITM can rediredt the session to a honeypot.</p>
+    <p>Features</p>
+    <ul>
+      <li>publickey and password authentication</li>
+      <li>Phishing FIDO Tokens (Information from OpenSSH)</li>
+      <li>hijacking and logging of terminal sessions</li>
+      <li>store and replace files during SCP/SFTP file transferes</li>
+      <li>port porwarding with SOCKS 4/5 support</li>
+      <li>intercept MOSH connections</li>
+      <li>audit clients against known vulnerabilities</li>
+      <li>plugin support</li>
+    </ul>
   </description>
-  <url type="homepage">https://www.ssh-mitm.at</url>
+  <url type="homepage">https://github.com/ssh-mitm/ssh-mitm</url>
+  <url type="help">https://docs.ssh-mitm.at/</url>
+  <url type="bugtracker">https://github.com/ssh-mitm/ssh-mitm/issues</url>
   <releases>
+    <release version="4.0.0" date="2023-09-20">
+      <description>
+        <p>Added</p>
+        <ul>
+            <li>added configuration file to configure default values</li>
+            <li>mosh - added more information for decrypted packet</li>
+            <li>added json logging format</li>
+            <li>added client ip and port to client information</li>
+          </ul>
+        <p>Fixed</p>
+        <ul>
+            <li>added workarround for git to avoid unexpected session termination when EOF was reveived</li>
+            <li>added fix for GitHub git operations</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+            <li>set banner name only for server, not for client</li>
+            <li>when output is piped to another application, the logformat is switched to json</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.5.8" date="2021-06-28"/>
   </releases>
+  <keywords>
+    <keyword>ssh</keyword>
+    <keyword>security</keyword>
+    <keyword>audit</keyword>
+    <keyword>mitm</keyword>
+    <keyword>proxy</keyword>
+  </keywords>
   <content_rating type="oars-1.0" />
   <screenshots>
     <screenshot>
