@@ -26,6 +26,16 @@
   <url type="help">https://docs.ssh-mitm.at/</url>
   <url type="bugtracker">https://github.com/ssh-mitm/ssh-mitm/issues</url>
   <releases>
+    <release version="4.1.0" date="2023-10-31">
+      <description>
+        <p>Changed</p>
+        <ul>
+            <li>better output for Flatpak</li>
+            <li>allow mkdir to work with default attr.st_mode</li>
+            <li>Add new option to store output of non-interactive commands</li>
+        </ul>
+      </description>
+    </release>
     <release version="4.0.0" date="2023-09-20">
       <description>
         <p>Added</p>
@@ -57,6 +67,9 @@
   </keywords>
   <content_rating type="oars-1.0" />
   <screenshots>
+    <screenshot>
+      <image>https://docs.ssh-mitm.at/_images/intro.png</image>
+    </screenshot>
     <screenshot>
       <image>https://docs.ssh-mitm.at/_images/ssh-mitm-password.png</image>
     </screenshot>
