@@ -26,24 +26,14 @@
   <url type="help">https://docs.ssh-mitm.at/</url>
   <url type="bugtracker">https://github.com/ssh-mitm/ssh-mitm/issues</url>
   <releases>
-    <release version="4.0.0" date="2023-09-20">
+    <release version="5.0.0" date="2024-07-06">
       <description>
-        <p>Added</p>
-        <ul>
-            <li>added configuration file to configure default values</li>
-            <li>mosh - added more information for decrypted packet</li>
-            <li>added json logging format</li>
-            <li>added client ip and port to client information</li>
-          </ul>
-        <p>Fixed</p>
-        <ul>
-            <li>added workarround for git to avoid unexpected session termination when EOF was reveived</li>
-            <li>added fix for GitHub git operations</li>
-        </ul>
         <p>Changed</p>
         <ul>
-            <li>set banner name only for server, not for client</li>
-            <li>when output is piped to another application, the logformat is switched to json</li>
+          <li>easier plugin development</li>
+          <li>merged SOCKS4 and SOCKS5 module in a single module</li>
+          <li>prepend entry points with "sshmitm" to avoid name conflicts</li>
+          <li>updated vulnerability db</li>
         </ul>
       </description>
     </release>
