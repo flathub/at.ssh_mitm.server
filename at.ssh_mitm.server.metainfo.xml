@@ -47,7 +47,7 @@
   </keywords>
   <content_rating type="oars-1.0" />
   <screenshots>
-    <screenshot>
+    <screenshot type="default">
       <image>https://docs.ssh-mitm.at/_images/intro.png</image>
       <caption>SSH-MITM in action: A tool for intercepting and manipulating SSH connections.</caption>
     </screenshot>
