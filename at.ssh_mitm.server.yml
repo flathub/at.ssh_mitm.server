@@ -3,8 +3,9 @@ runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: ssh-mitm
+console-app-no-binary: true
 finish-args:
-  # needed to accept client connections 
+  # needed to accept client connections
   # and connect to the remote server
   - --share=network
 modules:
