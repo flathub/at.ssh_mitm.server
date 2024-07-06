@@ -4,7 +4,9 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
   <name>SSH-MITM</name>
-  <developer_name>Manfred Kaiser</developer_name>
+  <developer id="at.ssh_mitm">
+    <name>Manfred Kaiser</name>
+  </developer>
   <summary>SSH-MITM - ssh audits made simple</summary>
   <description>
     <p>SSH-MITM is a man in the middle SSH Server for security audits and malware analysis.</p>
@@ -22,7 +24,9 @@
       <li>plugin support</li>
     </ul>
   </description>
-  <launchable type="command-line">ssh-mitm</launchable>
+  <provides>
+    <binary>ssh-mitm</binary>
+  </provides>
   <url type="homepage">https://github.com/ssh-mitm/ssh-mitm</url>
   <url type="help">https://docs.ssh-mitm.at/</url>
   <url type="bugtracker">https://github.com/ssh-mitm/ssh-mitm/issues</url>
