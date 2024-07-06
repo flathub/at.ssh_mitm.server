@@ -2,7 +2,7 @@
     "name": "python3-package-installation",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --verbose --ignore-installed --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} --no-build-isolation appimage argcomplete bcrypt cffi colored cryptography ecdsa markdown-it-py mdurl packaging paramiko pycparser pygments pynacl python-json-logger pytz pyyaml rich six sshpubkeys wrapt"
+        "pip3 install --verbose --ignore-installed --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} --no-build-isolation ssh-mitm appimage argcomplete bcrypt cffi colored cryptography ecdsa markdown-it-py mdurl packaging paramiko pycparser pygments pynacl python-json-logger pytz pyyaml rich six sshpubkeys wrapt"
     ],
     "sources": [
         {
@@ -154,6 +154,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl",
             "sha256": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/0c/c2/1855b6e971c576ca40cbf048d7ddd85529dc8eafa0ede92a3f2525f23dab/ssh_mitm-5.0.0-py3-none-any.whl",
+            "sha256": "230b039df9b5ad404db45fe207d7c04d2cd14d818e69378cf118d556a9dc2a12"
         },
         {
             "type": "file",
