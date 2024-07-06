@@ -4,7 +4,9 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
   <name>SSH-MITM</name>
-  <developer_name>Manfred Kaiser</developer_name>
+  <developer id="at.ssh_mitm">
+    <name>Manfred Kaiser</name>
+  </developer>
   <summary>SSH-MITM - ssh audits made simple</summary>
   <description>
     <p>SSH-MITM is a man in the middle SSH Server for security audits and malware analysis.</p>
@@ -22,38 +24,21 @@
       <li>plugin support</li>
     </ul>
   </description>
+  <provides>
+    <binary>ssh-mitm</binary>
+  </provides>
   <url type="homepage">https://github.com/ssh-mitm/ssh-mitm</url>
   <url type="help">https://docs.ssh-mitm.at/</url>
   <url type="bugtracker">https://github.com/ssh-mitm/ssh-mitm/issues</url>
   <releases>
-    <release version="4.1.0" date="2023-10-31">
+    <release version="5.0.0" date="2024-07-06">
       <description>
         <p>Changed</p>
         <ul>
-            <li>better output for Flatpak</li>
-            <li>allow mkdir to work with default attr.st_mode</li>
-            <li>Add new option to store output of non-interactive commands</li>
-        </ul>
-      </description>
-    </release>
-    <release version="4.0.0" date="2023-09-20">
-      <description>
-        <p>Added</p>
-        <ul>
-            <li>added configuration file to configure default values</li>
-            <li>mosh - added more information for decrypted packet</li>
-            <li>added json logging format</li>
-            <li>added client ip and port to client information</li>
-          </ul>
-        <p>Fixed</p>
-        <ul>
-            <li>added workarround for git to avoid unexpected session termination when EOF was reveived</li>
-            <li>added fix for GitHub git operations</li>
-        </ul>
-        <p>Changed</p>
-        <ul>
-            <li>set banner name only for server, not for client</li>
-            <li>when output is piped to another application, the logformat is switched to json</li>
+          <li>easier plugin development</li>
+          <li>merged SOCKS4 and SOCKS5 module in a single module</li>
+          <li>prepend entry points with "sshmitm" to avoid name conflicts</li>
+          <li>updated vulnerability db</li>
         </ul>
       </description>
     </release>
@@ -67,11 +52,13 @@
   </keywords>
   <content_rating type="oars-1.0" />
   <screenshots>
-    <screenshot>
+    <screenshot type="default">
       <image>https://docs.ssh-mitm.at/_images/intro.png</image>
+      <caption>SSH-MITM in action: A tool for intercepting and manipulating SSH connections.</caption>
     </screenshot>
     <screenshot>
       <image>https://docs.ssh-mitm.at/_images/ssh-mitm-password.png</image>
+      <caption>SSH-MITM: Tool displaying intercepted SSH connection details and authentication information.</caption>
     </screenshot>
   </screenshots>
 </component>

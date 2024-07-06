@@ -2,26 +2,31 @@
     "name": "python3-package-installation",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --verbose --ignore-installed --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} --no-build-isolation ssh-mitm argcomplete bcrypt cffi colored cryptography ecdsa markdown-it-py mdurl packaging paramiko pycparser pygments pynacl python-json-logger pytz pyyaml rich six sshpubkeys wrapt"
+        "pip3 install --verbose --ignore-installed --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} --no-build-isolation ssh-mitm appimage argcomplete bcrypt cffi colored cryptography ecdsa markdown-it-py mdurl packaging paramiko pycparser pygments pynacl python-json-logger pytz pyyaml rich six sshpubkeys wrapt"
     ],
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/1e/05/223116a4a5905d6b26bff334ffc7b74474fafe23fcb10532caf0ef86ca69/argcomplete-3.1.2-py3-none-any.whl",
-            "sha256": "d97c036d12a752d1079f190bc1521c545b941fda89ad85d15afa909b4d1b9a99"
+            "url": "https://files.pythonhosted.org/packages/81/fc/ba8a13eb01977dff3b73f1c6e0adfd736c75b711ceea9519685d0f27c54f/appimage-1.0.0-py3-none-any.whl",
+            "sha256": "3603b2373d0afa1808df2d6ac357f3a9c5f69a39c318529c8dbcaf26f1da9feb"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/fb/a7/ee4561fd9b78ca23c8e5591c150cc58626a5dfb169345ab18e1c2c664ee0/bcrypt-4.0.1-cp36-abi3-manylinux_2_28_aarch64.whl",
-            "sha256": "fbdaec13c5105f0c4e5c52614d04f0bca5f5af007910daa8b6b12095edaa67b3",
+            "url": "https://files.pythonhosted.org/packages/0b/29/cba741f3abc1700dda883c4a1dd83f4ae89e4e8654067929d89143df2c58/argcomplete-3.4.0-py3-none-any.whl",
+            "sha256": "69a79e083a716173e5532e0fa3bef45f793f4e61096cf52b5a42c0211c8b8aa5"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/29/3c/6e478265f68eff764571676c0773086d15378fdf5347ddf53e5025c8b956/bcrypt-4.1.3-cp39-abi3-manylinux_2_28_aarch64.whl",
+            "sha256": "3a5be252fef513363fe281bafc596c31b552cf81d04c5085bc5dac29670faa08",
             "only-arches": [
                 "aarch64"
             ]
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/64/fe/da28a5916128d541da0993328dc5cf4b43dfbf6655f2c7a2abe26ca2dc88/bcrypt-4.0.1-cp36-abi3-manylinux_2_28_x86_64.whl",
-            "sha256": "ca3204d00d3cb2dfed07f2d74a25f12fc12f73e606fcaa6975d1f7ae69cacbb2",
+            "url": "https://files.pythonhosted.org/packages/97/00/21e34b365b895e6faf9cc5d4e7b97dd419e08f8a7df119792ec206b4a3fa/bcrypt-4.1.3-cp39-abi3-manylinux_2_28_x86_64.whl",
+            "sha256": "5f7cd3399fbc4ec290378b541b0cf3d4398e4737a65d0f938c7c0f9d5e686611",
             "only-arches": [
                 "x86_64"
             ]
@@ -44,29 +49,29 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/6f/0d/a10351ef1a98e0b03d66887ec2d87c261f9a0fbff8f2bdb75614cc0a2850/colored-2.2.3-py3-none-any.whl",
-            "sha256": "1318b2fb8e0313d39724b8ab0707af79d1e2c0e60710b608a00e70fe0f84ff5d"
+            "url": "https://files.pythonhosted.org/packages/75/d1/548f697f88872321525e294f8863efbdd1c313964b7f94e49ab0dc4f2895/colored-2.2.4-py3-none-any.whl",
+            "sha256": "a7069673bd90a35f46cb748d012c17284a0668d2f1c06bc7a51822a2d5ad2112"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/e3/21/958e33e2c149461e0a93ca358b794771d55f781ca808efcadb86a4c08e49/cryptography-41.0.5-cp37-abi3-manylinux_2_28_aarch64.whl",
-            "sha256": "ec3b055ff8f1dce8e6ef28f626e0972981475173d7973d63f271b29c8a2897da",
+            "url": "https://files.pythonhosted.org/packages/5f/f9/c3d4f19b82bdb25a3d857fe96e7e571c981810e47e3f299cc13ac429066a/cryptography-42.0.8-cp39-abi3-manylinux_2_28_aarch64.whl",
+            "sha256": "dc0fdf6787f37b1c6b08e6dfc892d9d068b5bdb671198c72072828b80bd5fe4c",
             "only-arches": [
                 "aarch64"
             ]
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/85/62/48bcebd955945d8da3fe9b84a679dbf4bf179e1ac36e583b7eaa47506758/cryptography-41.0.5-cp37-abi3-manylinux_2_28_x86_64.whl",
-            "sha256": "7d208c21e47940369accfc9e85f0de7693d9a5d843c2509b3846b2db170dfd20",
+            "url": "https://files.pythonhosted.org/packages/fa/e2/b7e6e8c261536c489d9cf908769880d94bd5d9a187e166b0dc838d2e6a56/cryptography-42.0.8-cp39-abi3-manylinux_2_28_x86_64.whl",
+            "sha256": "9c0c1716c8447ee7dbf08d6db2e5c41c688544c61074b54fc4564196f55c25a7",
             "only-arches": [
                 "x86_64"
             ]
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/09/d4/4f05f5d16a4863b30ba96c23b23e942da8889abfa1cdbabf2a0df12a4532/ecdsa-0.18.0-py2.py3-none-any.whl",
-            "sha256": "80600258e7ed2f16b9aa1d7c295bd70194109ad5a30fdee0eaeefef1d4c559dd"
+            "url": "https://files.pythonhosted.org/packages/00/e7/ed3243b30d1bec41675b6394a1daae46349dc2b855cb83be846a5a918238/ecdsa-0.19.0-py2.py3-none-any.whl",
+            "sha256": "2cea9b88407fdac7bbeca0833b189e4c9c53f2ef1e1eaa29f6224dbc809b707a"
         },
         {
             "type": "file",
@@ -80,23 +85,23 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl",
-            "sha256": "8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7"
+            "url": "https://files.pythonhosted.org/packages/08/aa/cc0199a5f0ad350994d660967a8efb233fe0416e4639146c089643407ce6/packaging-24.1-py3-none-any.whl",
+            "sha256": "5b8f2217dbdbd2f7f384c41c628544e6d52f2d0f53c6d0c3ea61aa5d1d7ff124"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/bb/8f/3cef65d3fe76e59f320405027d594a0332e44852fef722f0ee4e81e2e7e3/paramiko-3.3.1-py3-none-any.whl",
-            "sha256": "b7bc5340a43de4287bbe22fe6de728aa2c22468b2a849615498dd944c2f275eb"
+            "url": "https://files.pythonhosted.org/packages/ad/50/8792484502c8141c20c996b802fefa8435a9c018a2bb440a06b172782118/paramiko-3.4.0-py3-none-any.whl",
+            "sha256": "43f0b51115a896f9c00f59618023484cb3a14b98bbceab43394a39c6739b7ee7"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
-            "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
+            "url": "https://files.pythonhosted.org/packages/13/a3/a812df4e2dd5696d1f351d58b8fe16a405b234ad2886a0dab9183fb78109/pycparser-2.22-py3-none-any.whl",
+            "sha256": "c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/43/88/29adf0b44ba6ac85045e63734ae0997d3c58d8b1a91c914d240828d0d73d/Pygments-2.16.1-py3-none-any.whl",
-            "sha256": "13fc09fa63bc8d8671a6d247e1eb303c4b343eaee81d861f3404db2935653692"
+            "url": "https://files.pythonhosted.org/packages/f7/3f/01c8b82017c199075f8f788d0d906b9ffbbc5a47dc9918a945e13d5a2bda/pygments-2.18.0-py3-none-any.whl",
+            "sha256": "b8e6aca0523f3ab76fee51799c488e38782ac06eafcf95e7ba832985c8e7b13a"
         },
         {
             "type": "file",
@@ -121,8 +126,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/32/4d/aaf7eff5deb402fd9a24a1449a8119f00d74ae9c2efa79f8ef9994261fc2/pytz-2023.3.post1-py2.py3-none-any.whl",
-            "sha256": "ce42d816b81b68506614c11e8937d3aa9e41007ceb50bfdcb0749b921bf646c7"
+            "url": "https://files.pythonhosted.org/packages/9c/3d/a121f284241f08268b21359bd425f7d4825cffc5ac5cd0e1b3d82ffd2b10/pytz-2024.1-py2.py3-none-any.whl",
+            "sha256": "328171f4e3623139da4983451950b28e95ac706e13f3f2630a879749e7a8b319"
         },
         {
             "type": "file",
@@ -142,8 +147,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/be/2a/4e62ff633612f746f88618852a626bbe24226eba5e7ac90e91dcfd6a414e/rich-13.6.0-py3-none-any.whl",
-            "sha256": "2b38e2fe9ca72c9a00170a1a2d20c63c790d0e10ef1fe35eba76e1e7b1d7d245"
+            "url": "https://files.pythonhosted.org/packages/87/67/a37f6214d0e9fe57f6ae54b2956d550ca8365857f42a1ce0392bb21d9410/rich-13.7.1-py3-none-any.whl",
+            "sha256": "4edbae314f59eb482f54e9e30bf00d33350aaa94f4bfcd4e9e3110e64d0d7222"
         },
         {
             "type": "file",
@@ -152,8 +157,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/d7/b2/cbcacab357a7faefe9957f2fab3251e988274cd4a8e75d359dfc7a910b7a/ssh_mitm-4.1.0-py3-none-any.whl",
-            "sha256": "ed0ed31e92a091985bce45e144ee5b64beb617f158790753a7b27a51ccba213e"
+            "url": "https://files.pythonhosted.org/packages/0c/c2/1855b6e971c576ca40cbf048d7ddd85529dc8eafa0ede92a3f2525f23dab/ssh_mitm-5.0.0-py3-none-any.whl",
+            "sha256": "230b039df9b5ad404db45fe207d7c04d2cd14d818e69378cf118d556a9dc2a12"
         },
         {
             "type": "file",
@@ -162,16 +167,16 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ca/1c/5caf61431705b3076ca1152abfd6da6304697d7d4fe48bb3448a6decab40/wrapt-1.15.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-            "sha256": "a89ce3fd220ff144bd9d54da333ec0de0399b52c9ac3d2ce34b569cf1a5748fb",
+            "url": "https://files.pythonhosted.org/packages/7f/a7/f1212ba098f3de0fd244e2de0f8791ad2539c03bef6c05a9fcb03e45b089/wrapt-1.16.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+            "sha256": "a452f9ca3e3267cd4d0fcf2edd0d035b1934ac2bd7e0e57ac91ad6b95c0c6389",
             "only-arches": [
                 "aarch64"
             ]
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/b9/40/975fbb1ab03fa987900bacc365645c4cbead22baddd273b4f5db7f9843d2/wrapt-1.15.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-            "sha256": "3abbe948c3cbde2689370a262a8d04e32ec2dd4f27103669a45c6929bcdbfe7c",
+            "url": "https://files.pythonhosted.org/packages/6e/52/2da48b35193e39ac53cfb141467d9f259851522d0e8c87153f0ba4205fb1/wrapt-1.16.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+            "sha256": "72554a23c78a8e7aa02abbd699d129eead8b147a23c56e08d08dfc29cfdddca1",
             "only-arches": [
                 "x86_64"
             ]
