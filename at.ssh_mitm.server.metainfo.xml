@@ -31,6 +31,18 @@
   <url type="help">https://docs.ssh-mitm.at/</url>
   <url type="bugtracker">https://github.com/ssh-mitm/ssh-mitm/issues</url>
   <releases>
+    <release version="6.0.1" date="2026-10-14">
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>warn at startup when running as a Flatpak without home/host filesystem access</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>removed the python-json-logger, pytz, colored and psrpcore dependencies</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.0.0" date="2024-07-06">
       <description>
         <p>Changed</p>
